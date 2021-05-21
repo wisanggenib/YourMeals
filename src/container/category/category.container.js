@@ -1,20 +1,20 @@
 import React from 'react';
-import {View, Text, Button} from 'react-native';
+import {View, Text, Button, TextInput} from 'react-native';
 
-import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
-import * as icon from '@fortawesome/free-solid-svg-icons';
+import {Icons} from '../../components';
 
 import Styles from './category.style';
 
 const Category = props => {
   return (
     <View style={Styles.container}>
-      <Text>Category Screen</Text>
+      <Text>
+        Category Screen <Icons icon="favorite" />
+      </Text>
       <Button
         title="Meals"
         onPress={() => props.navigation.navigate('Meals')}
       />
-      <FontAwesomeIcon icon={icon.faStarOfLife} />
     </View>
   );
 };
