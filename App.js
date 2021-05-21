@@ -1,12 +1,9 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import RootStack from './src/navigators';
 
 const App = () => {
-  return (
-    <View>
-      <Text>Welcome Page</Text>
-    </View>
-  );
+  console.log('start');
+  return <RootStack />;
 };
 
 export default App;
