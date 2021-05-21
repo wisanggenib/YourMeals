@@ -8,11 +8,9 @@ import {
   TouchableNativeFeedback,
 } from 'react-native';
 
-import {CATEGORIES} from '../../datas/data';
-
-import {Icons} from '../../components';
-
 import Styles from './category.style';
+
+import {CATEGORIES} from '../../datas/data';
 
 const renderItem = ({id, color, title}) => {
   return (
