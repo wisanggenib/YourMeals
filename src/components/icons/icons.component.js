@@ -11,7 +11,13 @@ const Icons = props => {
     case 'meals':
       return <FontAwesomeIcon icon={icon.faDrumstickBite} />;
     case 'favorite':
-      return <FontAwesomeIcon icon={icon.faStar} />;
+      return (
+        <FontAwesomeIcon
+          icon={icon.faStar}
+          color={props.color}
+          size={props.size}
+        />
+      );
 
     default:
       return <Text>Not Found or please Register it</Text>;
