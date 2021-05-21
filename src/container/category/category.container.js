@@ -1,6 +1,9 @@
 import React from 'react';
 import {View, Text, Button} from 'react-native';
 
+import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
+import * as icon from '@fortawesome/free-solid-svg-icons';
+
 import Styles from './category.style';
 
 const Category = props => {
@@ -11,6 +14,7 @@ const Category = props => {
         title="Meals"
         onPress={() => props.navigation.navigate('Meals')}
       />
+      <FontAwesomeIcon icon={icon.faStarOfLife} />
     </View>
   );
 };
