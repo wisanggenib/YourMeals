@@ -9,8 +9,16 @@ const MealStack = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen name="Category" component={Category} />
-      <Stack.Screen name="Meals" component={Meals} />
-      <Stack.Screen name="MealDetails" component={MealDetails} />
+      <Stack.Screen
+        name="Meals"
+        component={Meals}
+        options={({route}) => ({title: route.params.name})}
+      />
+      <Stack.Screen
+        name="MealDetails"
+        component={MealDetails}
+        options={({route}) => ({title: route.params.name})}
+      />
     </Stack.Navigator>
   );
 };
