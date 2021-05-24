@@ -40,6 +40,7 @@ const ListData = props => {
     <FlatList
       showsVerticalScrollIndicator={false}
       data={props.data}
+      keyExtractor={(item, index) => index.toString()}
       renderItem={({item}) => <RenderItem item={item} />}
     />
   );
